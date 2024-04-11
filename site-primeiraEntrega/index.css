@@ -1,0 +1,142 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background-color: rgb(213, 213, 247);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+}
+
+.ulcab {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blue;
+    list-style-type: none;
+    padding-bottom: 5px;
+}
+
+.licab {
+    color: white;
+    font-weight: 100;
+}
+
+a li:hover {
+    font-weight: 900;
+}
+
+a,
+li:active {
+    color: brown;
+}
+
+.ajustecabecalho {
+    margin-top: -12px;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -15px;
+    background-color: blue;
+    color: white;
+
+}
+
+#logo-marca {
+    height: 50px;
+    width: 50px;
+    margin-top: 15px;
+}
+
+.center {
+    text-align: center;
+}
+
+#imagemdefundo {
+    background-image: url(imagens/idoso2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    height: 45vw;
+    width: 100%vw;
+    margin-top: -10px;
+}
+
+#textoimagem {
+    width: auto;
+    height: auto;
+    font-size: clamp(1px, 1em + 5px, 12px);
+    color: rgb(11, 70, 230);
+    ;
+}
+
+.container {
+    display: flex;
+    column-gap: 90px;
+    row-gap: 90px;
+    background-color: rgb(214, 214, 214);
+
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.item {
+    column-gap: 90px;
+    row-gap: 90px;
+}
+
+.item1 {
+    display: flex;
+    align-items: center;
+}
+
+.item1 h2 {
+    margin-left: 50px;
+}
+
+.containeruber {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.itemuber {
+    border-bottom: 1px black solid;
+}
+
+.nomeempresa {
+    color: blue;
+}
+
+form>input {
+    margin: 10px;
+}
+
+.tamanhoimg {
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: auto;
+}
+
+.video {
+    max-width: 1000px;
+    text-align: center;
+    margin: auto;
+    width: auto;
+}
+
+iframe {
+
+    width: 60%;
+}
