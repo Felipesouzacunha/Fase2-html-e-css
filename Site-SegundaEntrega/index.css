@@ -1,3 +1,10 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
@@ -9,6 +16,13 @@ main {
     max-width: 1000px;
     margin: auto;
     background-color: white;
+    position: relative;
+    margin-top: 100px;
+}
+
+#Contato {
+    position: relative;
+    margin-top: 100px;
 }
 
 .ulcab {
