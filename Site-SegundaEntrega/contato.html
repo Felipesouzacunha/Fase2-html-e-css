@@ -40,15 +40,17 @@
     <div id="Contato">
         <h1 class="center">Deseja entrar em contato conosco?</h1>
         <h3 class="center">Digite algumas informações</h3>
-        <form action="cadastr.php" class="center">
-            Nome:<input type="text" name="" id="" class="bla"> <br>
-            Idade:<input type="text" name="" id="" class="form"><br>
-            E-mail:<input type="email" name="" id="" placeholder="Digite seu email aqui">
-            <input type="submit" value="enviar">
-            <p></p>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Deixe alguma mensagem"></textarea>
-        </form>
+        
+    <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Enviar</button>
+    </form>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
