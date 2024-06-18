@@ -40,3 +40,10 @@ formulario.addEventListener("submit", function(event) {
 function validacaoEmail(email) {
     return /^[\w-.]+@([\w-.]+)\.[^.]+$/.test(email);
 }
+
+function adjustFontSize(change) {
+    let content = document.querySelector('#content');
+    let style = window.getComputedStyle(content, null).getPropertyValue('font-size');
+    let currentSize = parseFloat(style);
+    content.style.fontSize = (currentSize + change) + 'px';
+}
