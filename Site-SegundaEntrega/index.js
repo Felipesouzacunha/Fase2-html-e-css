@@ -42,7 +42,7 @@ function validacaoEmail(email) {
 }
 
 function adjustFontSize(change) {
-    let content = document.querySelector('#content');
+    let content = document.querySelector('#a');
     let style = window.getComputedStyle(content, null).getPropertyValue('font-size');
     let currentSize = parseFloat(style);
     content.style.fontSize = (currentSize + change) + 'px';
