@@ -9,8 +9,8 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     background-color: rgb(213, 213, 247);
+    transition: linear 0.2s;
 
-}
 
 .dark-theme {
     background-color: #121212;
@@ -223,4 +223,71 @@ a:hover {
   justify-content: center;
   align-items: center;
 
+}
+
+}
+
+body.dark{
+    background-color: black;
+    color: white;
+}
+
+.dark main{
+    background-color: #121212;
+    color: white;
+}
+
+.dark .container{
+    background-color: #121212;
+    color: white;
+}
+
+.dark section{
+    background-color: #121212;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background-color: gray;
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 15px;
+    margin-top: 15px;
+    padding-top: 20px;
+    padding: 5px;
+    position: relative;
+    height: 10px;
+    width: 40px;
+
+    transform: scale(1.5);
+}
+
+.label .ball{
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 18px;
+    width: 18px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(27px);
+}
+
+
+main{
+    background-color: #0066cc;
 }

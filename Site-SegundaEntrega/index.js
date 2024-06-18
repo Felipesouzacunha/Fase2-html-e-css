@@ -2,6 +2,12 @@ function toggleTheme() {
     document.body.classList.toggle('dark-theme');
 }
 
+const chk = document.getElementById('chk')
+
+chk.addEventListener('change', () =>{
+    document.body.classList.toggle('dark')
+})
+
 // Array de nomes
 const nomes = ["Peter", "Vander", "Douglas", "Roger", "Jorge", "Felipe", "Simone"];
 
