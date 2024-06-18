@@ -9,6 +9,35 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     background-color: rgb(213, 213, 247);
+
+}
+
+.dark-theme {
+    background-color: #121212;
+    
+    
+}
+.theme-toggle-button {
+    margin: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.Ajuste-da-Fonte{
+    margin: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+
 }
 
 main {
@@ -51,6 +80,9 @@ li:active {
     margin-top: -12px;
     margin-left: -12px;
     margin-right: -12px;
+    background-color: #121212;
+    color: #f1f1f1;
+    
 }
 
 #cabecalho {
@@ -70,6 +102,7 @@ li:active {
 
 .center {
     text-align: center;
+    
 }
 
 #imagemdefundo {
@@ -153,4 +186,41 @@ form>input {
 iframe {
 
     width: 60%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #0e7bd4;
+}
+th {
+    text-align: left;
+    border: 5px solid #0d7fd6;
+}
+td {
+    padding: 10px;
+    border: 5px solid #0d7fd6;
+}
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+a:hover {
+    text-decoration: underline;
+}
+.section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.active {
+    background-color: #f0f0f0;
+}
+
+#formulario{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
