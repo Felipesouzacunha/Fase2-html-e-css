@@ -1,3 +1,4 @@
+//muda o tema do site
 function toggleTheme() {
     document.body.classList.toggle('dark-theme');
 }
@@ -8,44 +9,28 @@ chk.addEventListener('change', () =>{
     document.body.classList.toggle('dark')
 })
 
-// Array de nomes
-const nomes = ["Peter", "Vander", "Douglas", "Roger", "Jorge", "Felipe", "Simone"];
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('formulario');
 
-// Preenche o select de nomes
-const selectNome = document.getElementById("nomes");
-cidades.forEach(nome => {
-    const option = document.createElement("option");
-    option.value = nome;
-    option.text = nome;
-    selectNome.appendChild(option);
-});
+    form.addEventListener('submit', (event) => {
+        event.preventDefault(); // Evita o envio do formulário
 
-// Valida o email
-const formulario = document.getElementById("formulario");
-formulario.addEventListener("submit", function(event) {
-    event.preventDefault();
+        // Captura os dados do formulário
+        const nome = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const idade = document.getElementById('idade').value;
+        const comentario = document.querySelector('textarea').value;
 
-    const email = document.getElementById("email").value;
-    if (!validacaoEmail(email)) {
-        alert("Email inválido!");
-        return;
-    }
+        // Armazena os dados em um array
+        const userData = [nome, email, idade, comentario];
 
-    // Armazena os dados do formulário em um array
-    const dados = {
-        nome: document.getElementById("nome").value,
-        email: email,
+        // Exibe os dados no console (ou faça o que precisar com os dados)
+        console.log(userData);
         
-    };
-
-    // Processa ou armazena os dados do formulário (ex: salvar em banco de dados)
-    console.log("Dados do formulário:", dados);
+        // Para exibir os dados na página, se desejado
+        alert('Obrigado por nos contactar!!');
+    });
 });
-
-// Função de validação de email (simplificada)
-function validacaoEmail(email) {
-    return /^[\w-.]+@([\w-.]+)\.[^.]+$/.test(email);
-}
 
 function adjustFontSize(change) {
     let content = document.querySelector('main');
