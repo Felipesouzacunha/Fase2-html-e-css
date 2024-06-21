@@ -104,6 +104,10 @@ li:active {
     text-align: center;
     
 }
+.center1{
+    text-align: center;
+    color: #007BFF;
+}
 
 #imagemdefundo {
     background-image: url(imagens/idoso2.jpg);
